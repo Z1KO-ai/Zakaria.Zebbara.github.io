@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
+
+    <style>
+        
+        body {
+            background-color:black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    
+        /* Style the canvas */
+        #gameCanvas {
+            background-color: black; /* Black background for the canvas */
+            border: 4px solid red; /* White border around the canvas */
+        }
+    
+        /* Style the header */
+        h2 {
+            color: red;
+            font-size: xx-large;
+            font-weight: 900;
+        }
+        p{
+            color: red;
+        }
+        /* Style the start button */
+        #start_button {
+            padding: 10px 20px;
+            background-color: red; 
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        #start_button:hover {
+            background-color: red; 
+            transform: scale(1.1) ;
+            transition: 0.8s;
+        }
+    </style>
+    
+</head>
+<body onload="brython()">
+
+    <h2>Snake Game</h2>
+    <p>Play and Ejoy </p>
+    
+    <!-- Game canvas -->
+    <canvas id="gameCanvas"></canvas>
+    
+    <!-- Start button -->
+    <button id="start_button">Start Game</button>
+
+    <!-- Include the Python script (this will be our game logic) -->
+    <script type="text/python" src="snake_game.py"></script>
+
+</body>
+</html>
