@@ -182,6 +182,7 @@ section{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 20px;
 }
 .projects .content{
     margin-top: 30px;
@@ -203,9 +204,12 @@ section{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    min-height: 18em;
+    max-height: 20em;
+    overflow-y: auto;
 }
 .project-card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .project-card:hover .project-image{
     opacity: 0.9;
@@ -436,6 +440,18 @@ form input:focus + i{
         width: 95%;
         padding: 15px;
     }
+    .projects{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card{
+        width: 90%;
+    }
+    .main{
+        background: url(imgs/img768.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }
 @media (max-width:1023px){
     header{
@@ -465,14 +481,6 @@ form input:focus + i{
     .content{
         flex-direction: column;
         align-items: center;
-    }
-}
-@media (max-width: 768px) {
-    body {
-        background-image: url(imgs/porfolioimg2.jpg); 
-        background-size: cover;
-        background-position: center;
-        background-attachment: scroll;
     }
 }
 @media (max-width: 641px){
