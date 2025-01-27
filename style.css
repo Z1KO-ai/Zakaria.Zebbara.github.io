@@ -7,6 +7,22 @@
     scroll-behavior: smooth;
 }
 
+ 
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(imgs/backmeimg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+  
 header{
     background-color: black ;
     width: 100%;
@@ -37,16 +53,7 @@ header{
 section{
     padding: 100px 200px;
 }
-.main{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url(imgs/porfolioimg3.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+
 .main h2{
     color: white;
     font-size: 1.4em;
@@ -206,7 +213,7 @@ section{
     align-items: center;
     min-height: 18em;
     max-height: 20em;
-    overflow-y: auto;
+    
 }
 .project-card:hover{
     transform: scale(1.05);
